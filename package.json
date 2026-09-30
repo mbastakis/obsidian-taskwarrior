@@ -1,0 +1,30 @@
+{
+  "name": "obsidian-taskwarrior",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "check": "tsc --noEmit && node scripts/validate.mjs && prettier --check .",
+    "format": "prettier --write .",
+    "build": "tsc --noEmit && node esbuild.config.mjs",
+    "dev": "node scripts/dev.mjs",
+    "install:local": "node scripts/install.mjs",
+    "install:release": "node scripts/install-release.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "esbuild": "0.28.2",
+    "obsidian": "1.13.1",
+    "prettier": "3.9.9",
+    "typescript": "7.0.2"
+  }
+}

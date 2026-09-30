@@ -1,0 +1,10 @@
+{
+  "id": "taskwarrior-notes",
+  "name": "Taskwarrior Notes",
+  "version": "0.1.0",
+  "minAppVersion": "1.12.0",
+  "description": "Connect Taskwarrior with your notes. Initial release provides a hello-world command to verify installation.",
+  "author": "mbastakis",
+  "authorUrl": "https://github.com/mbastakis",
+  "isDesktopOnly": true
+}
