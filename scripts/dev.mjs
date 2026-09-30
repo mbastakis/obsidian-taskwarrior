@@ -24,6 +24,7 @@ const ctx = await context({
           try {
             const vaults = execFileSync("obsidian", ["vaults", "verbose"], {
               encoding: "utf8",
+              timeout: 10000,
             });
             if (
               !vaults
@@ -41,7 +42,7 @@ const ctx = await context({
                 "plugin:reload",
                 "id=taskwarrior-notes",
               ],
-              { stdio: "inherit" },
+              { stdio: "inherit", timeout: 10000 },
             );
           } catch {
             console.log(

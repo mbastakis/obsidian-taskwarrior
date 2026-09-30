@@ -1,6 +1,12 @@
 # Implementation and delivery plan
 
-Status: planning; agreed direction with unresolved details explicitly listed below.
+Status: hello-world development and delivery bootstrap implemented; task integration remains planned.
+
+## Delivery bootstrap — implemented first
+
+The immediate milestone is an installable hello-world plugin with an isolated development vault, TypeScript/esbuild watch builds, official CLI reloads, automated checks, and tag-triggered GitHub publication. It precedes all task access. Actual commands and installation instructions are maintained in the README.
+
+Release policy supersedes the earlier draft-release proposal below: matching version tags automatically publish releases after checks, without a manual draft approval step. Exact-version installation into the real vault remains explicit. The initial installer preserves settings but does not yet back up installed binaries; rollback uses installation of an earlier published version. No Taskfile wrapper is implemented.
 
 ## Goal
 
